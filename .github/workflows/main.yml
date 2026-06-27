@@ -1,0 +1,16 @@
+name: TDS GA1 Validation
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  test:
+    run-on: ubuntu-letest
+    steps:
+      -uses: actions/checkout@v4
+
+      -name: '24f2000164@ds.study.iitm.ac.in'
+        run: echo " Hello World!"
+        
